@@ -5,8 +5,6 @@ const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 const config = require('./config/key')
 
-
-
 app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
