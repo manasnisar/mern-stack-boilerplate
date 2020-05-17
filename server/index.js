@@ -22,6 +22,10 @@ connection.once('open', () => {
 const userRouter = require('./routes/users');
 app.use('/users', userRouter);
 
+app.get('/',(req,res) => {
+    res.json({"hello" : "I am deployed on heroku."})
+})
+
 const port = process.env.PORT || 5000;
 
 app.listen(port, () =>{
